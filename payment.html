@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA HOUSE | Оплата</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
+    <script defer src="./app.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-box">
+                <a href="./" class="header-logo">
+                    <img src="img/logo.jpg" alt="logo">
+                </a>
+
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="./">Главная</a></li>
+                        <li><a href="./payment.html">Купить билет</a></li>
+                        <li><a href="./giveaways.html">Розыгрыши</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-burger">
+                    <img src="./img/menu.svg" alt="burger-menu">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="./" class="nav-link">Главная</a></li>
+                    <li><a href="./payment.html" class="nav-link">Купить билет</a></li>
+                    <li><a href="./giveaways.html" class="nav-link">Розыгрыши</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section class="payment">
+            <div class="container">
+                <div class="payment-box fade-in">
+                    <h1 class="payment-title">Оплата билета</h1>
+
+                    <div class="payment-info">
+                        <div class="payment-item">
+                            <p class="payment-label">Номер карты</p>
+                            <div class="payment-card">
+                                <span class="payment-card-number">0000 0000 0000 0000</span>
+                                <button class="payment-copy">Копировать</button>
+                            </div>
+                        </div>
+
+                        <div class="payment-item">
+                            <p class="payment-label">Банк / Имя</p>
+                            <p class="payment-text">Сбербанк / Иван И.</p>
+                        </div>
+
+                        <div class="payment-item">
+                            <p class="payment-label">Куда отправлять скрин</p>
+                            <a href="https://t.me/say4ik17" class="payment-link" target="_blank">
+                                https://t.me/say4ik17
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TELEGRAM BLOCK -->
+                <div class="telegram fade-in-delay">
+                    <h2 class="telegram-title">Наш Telegram канал</h2>
+                    <a href="https://t.me/BatyaSayDisco" target="_blank" class="telegram-button">
+                        Перейти в канал
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const copyBtn = document.querySelector('.payment-copy');
+        const cardNumber = document.querySelector('.payment-card-number');
+
+        copyBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText(cardNumber.textContent);
+            copyBtn.textContent = 'Скопировано';
+            setTimeout(() => {
+                copyBtn.textContent = 'Копировать';
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
