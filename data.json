@@ -1,0 +1,62 @@
+{
+    "mainImage": {
+        "file": "main.jpg",
+        "alt": "SMA HOUSE party"
+    },
+    "parties": [
+        {
+            "id": 1,
+            "date": "12 июля 2026",
+            "time": "22:00",
+            "place": "Клуб XXX",
+            "price": "500₽",
+            "description": "Ночная вечеринка с диджеями и атмосферой хауса"
+        },
+        {
+            "id": 2,
+            "date": "26 июля 2026",
+            "time": "23:00",
+            "place": "Клуб YYY",
+            "price": "700₽",
+            "description": "Летняя вечеринка с приглашённым DJ"
+        }
+    ],
+    "payment": {
+        "cardNumber": "0000 0000 0000 0000",
+        "bankName": "Сбербанк / Иван Иванов",
+        "sendScreenshotTo": "Telegram: @username",
+        "telegramChannel": "https://t.me/smahouse"
+    },
+    "giveaways": [
+        {
+            "id": 1,
+            "title": "Розыгрыш билетов",
+            "image": "giveaway1.jpg",
+            "prizes": [
+                "2 билета на вечеринку",
+                "Бесплатный вход"
+            ],
+            "conditions": [
+                "Подписка на Telegram-канал",
+                "Репост записи"
+            ],
+            "resultsDate": "10 июля 2026",
+            "detailsLink": "https://t.me/smahouse/123"
+        },
+        {
+            "id": 2,
+            "title": "VIP розыгрыш",
+            "image": "giveaway2.jpg",
+            "prizes": [
+                "VIP стол",
+                "Бутылка шампанского"
+            ],
+            "conditions": [
+                "Отметить друга",
+                "Подписаться на Instagram"
+            ],
+            "resultsDate": "25 июля 2026",
+            "detailsLink": "https://t.me/smahouse/456"
+        }
+    ]
+}
